@@ -1,0 +1,6 @@
+clean code
+more oop desygn - scene stack, game object, ...
+add lua
+add collision detection
+add more shaders - water, sky
+add land gen
