@@ -1,6 +1,8 @@
+#pragma once
+#include "stdafx.hpp"
 #include <GL/glew.h>
 
-#pragma once
+
 class Mesh
 {
 public:

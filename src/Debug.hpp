@@ -1,5 +1,5 @@
 #pragma once
-
+#include "stdafx.hpp"
 #include <GL/glew.h>
 
 #include <iostream>
@@ -51,11 +51,20 @@ bool inline GLCheckError()
     return true;
 }
 
-
-//#ifdef DEBUG
-#define GLCall(x) GLClearError();\
+//TODO fix log
+#ifdef DEBUG
+    #define GLCall(x) GLClearError();\
     x;\
     ASSERT(GLCheckError())
-//#else
-//#define GLCall(x) x
-//#endif
+    #deifine LOGTRASE(x)
+    #define LOGWARNING(x)
+    #define LOGERROR(x)
+    #define LOGINFO(x)
+#else
+    #define GLCall(x) x
+    #define LOGTRASE(x)
+    #define LOGWARNING(x)
+    #define LOGERROR(x)
+    #define LOGINFO(x)
+#endif
+

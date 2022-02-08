@@ -1,8 +1,9 @@
 #ifndef TEMPLATEPROJECT_CAMERA_HPP
 #define TEMPLATEPROJECT_CAMERA_HPP
 
+#include "stdafx.hpp"
 #include <array>
-
+#include <iostream>
 #include <GL/glew.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -10,6 +11,7 @@
 
 class Camera {
 public:
+    Camera();
     Camera(glm::vec3 position, glm::vec3 up, GLfloat yaw, GLfloat pitch, GLfloat moveSpeed, GLfloat turnSpeed);
     void keyControl(const std::array<bool, 1024>& keys, GLfloat deltaTime);
     void mouseControl(GLfloat xChange, GLfloat yChange);

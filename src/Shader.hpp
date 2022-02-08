@@ -1,4 +1,5 @@
 #pragma once
+#include "stdafx.hpp"
 #include <cstring>
 #include <fstream>
 #include <sstream>

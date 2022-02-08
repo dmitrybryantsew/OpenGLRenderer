@@ -1,5 +1,6 @@
 #ifndef TEMPLATEPROJECT_MODEL_HPP
 #define TEMPLATEPROJECT_MODEL_HPP
+#include "stdafx.hpp"
 #include <vector>
 #include <string>
 #include <assimp/Importer.hpp>

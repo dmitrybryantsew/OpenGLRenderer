@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.20)
 
 set(HUNTER_ROOT  "E://.hunter")
-
+set(HUNTER_STATUS_DEBUG ON)
 
 #SET(GCC_COVERAGE_COMPILE_FLAGS -shared -nostartfiles)
 
@@ -11,7 +11,6 @@ HunterGate(
     SHA1 "88ea6d37c897a81a080eb9ae0f69d7807bbb3c73"
     LOCAL
 )
-
 
 
 project(templateProject)
@@ -83,7 +82,8 @@ message("Done ")
 
 file(GLOB_RECURSE SOURCES src/*.cpp)
 
-add_executable(${PROJECT_NAME} ${SOURCES} src/Texture.cpp src/Texture.hpp src/AmbientLight.cpp src/AmbientLight.hpp)
+add_executable(${PROJECT_NAME} ${SOURCES} src/Texture.cpp src/Texture.hpp src/AmbientLight.cpp src/AmbientLight.hpp src/app.cpp src/app.hpp src/Event/Event.hpp src/Event/MauseEvent.hpp src/Event/KeyboardEvent.hpp )
+target_precompile_headers(${PROJECT_NAME} PRIVATE src/stdafx.hpp)
 target_link_libraries(${PROJECT_NAME} glfw ${OPENGL_LIBRARY} stb_image imgui glew::glew glm unistd Assimp::assimp Boost::boost)
 
 include_directories(vendor/stb_image)

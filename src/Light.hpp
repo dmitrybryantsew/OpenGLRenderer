@@ -1,5 +1,6 @@
 #ifndef TEMPLATEPROJECT_LIGHT_HPP
 #define TEMPLATEPROJECT_LIGHT_HPP
+#include "stdafx.hpp"
 #include <iostream>
 #include <GL/glew.h>
 #include <glm/glm.hpp>

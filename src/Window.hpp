@@ -1,9 +1,13 @@
+#pragma once
+#include "stdafx.hpp"
 #include <iostream>
+#include <array>
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include <array>
-#pragma once
+
+
+
 class Window
 {
 public:

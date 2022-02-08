@@ -1,6 +1,8 @@
 #ifndef TEMPLATEPROJECT_SPOTLIGHT_HPP
 #define TEMPLATEPROJECT_SPOTLIGHT_HPP
 
+#include "stdafx.hpp"
+
 #include <iostream>
 #include "PointLight.hpp"
 

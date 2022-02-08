@@ -1,6 +1,6 @@
 #ifndef TEMPLATEPROJECT_MATERIAL_HPP
 #define TEMPLATEPROJECT_MATERIAL_HPP
-
+#include "stdafx.hpp"
 #include <GL/glew.h>
 #include <GL/gl.h>
 

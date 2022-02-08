@@ -1,6 +1,7 @@
 #ifndef TEMPLATEPROJECT_AMBIENTLIGHT_HPP
 #define TEMPLATEPROJECT_AMBIENTLIGHT_HPP
 
+#include "stdafx.hpp"
 #include <GL/glew.h>
 #include <glm/glm.hpp>
 

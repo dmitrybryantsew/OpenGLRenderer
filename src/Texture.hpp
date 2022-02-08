@@ -1,7 +1,7 @@
 #ifndef TEMPLATEPROJECT_TEXTURE_HPP
 #define TEMPLATEPROJECT_TEXTURE_HPP
 
-
+#include "stdafx.hpp"
 #include <GL/glew.h>
 #include <string>
 #include <iostream>

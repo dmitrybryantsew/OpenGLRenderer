@@ -1,3 +1,4 @@
+
 #include "Camera.hpp"
 
 Camera::Camera(glm::vec3 position, glm::vec3 up, GLfloat yaw, GLfloat pitch, GLfloat moveSpeed, GLfloat turnSpeed):
@@ -66,7 +67,7 @@ void Camera::mouseControl(GLfloat xChange, GLfloat yChange) {
     {
         pitch = -89.0f;
     }
-
+    std::cout << yaw << " " << pitch << "\n";
     update();
 }
 
@@ -76,6 +77,10 @@ const glm::vec3 &Camera::getPosition() const {
 
 glm::vec3 Camera::getCameraDirection() {
     return glm::normalize(front);
+}
+
+Camera::Camera() {
+
 }
 
 

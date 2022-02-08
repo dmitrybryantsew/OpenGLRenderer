@@ -1,5 +1,5 @@
 #include "Shader.hpp"
-#include <iostream>
+
 Shader::Shader()
 {
 	shader = 0, uniformModel = 0, uniformProjection = 0, pointLightCount = 0, spotLightCount = 0;
@@ -9,10 +9,10 @@ void Shader::CreateFromFiles(const char *vShader, const char *fShader)
 {
 	std::string vShaderCode = readShaderCodeFromFile(vShader);
 	std::string fShaderCode = readShaderCodeFromFile(fShader);
-	std::cout << "shader code!  \n";
-    std::cout << vShaderCode << std::endl;
-    std::cout << fShaderCode << std::endl;
-	compileShaders(vShaderCode.c_str(), fShaderCode.c_str());
+    compileShaders(vShaderCode.c_str(), fShaderCode.c_str());
+	std::cout << "shader code compilled succesfully \n";
+
+
 }
 
 Shader::~Shader()
